@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+  <style>
+     body {
+            margin: 0;
+         
+        }
+
+        /* Style for the header */
+        .header {
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            padding-bottom: 10px;
+            background-color: white; /* Ensure the header background is solid */
+            z-index: 1000; /* Ensures the header stays above other content */
+        }
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+    }
+
+    .activity p {
+      font-size: 18px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+
+    .sound-button {
+      cursor: pointer;
+      font-size: 24px;
+      border: none;
+      background: none;
+      /* color: blue; */
+      /* text-decoration: underline; */
+      margin-left: 5px;
+    }
+
+    .sound-button:hover {
+      text-decoration: none;
+    }
+    .backgroun{
+            background-image: url("border.png");
+            background-size: cover; /* Ensures the background image covers the section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
+
+        }
+    .clickable-w {
+      cursor: pointer;
+      color: rgb(154, 34, 240); /* Optionally style the clickable "W" */
+    }
+    .clickable-wh {
+      cursor: pointer;
+      color: rgb(154, 34, 240); /* Optionally style the clickable "W" */
+    }
+  </style>
+</head>
+
+<body class="backgroun">
+  <audio id="sound-player11" src="./sounds/bee.mp3"></audio>
+  <audio id="sound-player12" src="./sounds/tree.mp3"></audio>
+  <audio id="sound-player13" src="./sounds/feet.mp3"></audio>
+  <audio id="sound-player14" src="./sounds/see.mp3"></audio>
+  <audio id="sound-player15" src="./sounds/sleep.mp3"></audio>
+  <audio id="sound-player21" src="./sounds/leaf.mp3"></audio>
+  <audio id="sound-player22" src="./sounds/tea.mp3"></audio>
+  <audio id="sound-player23" src="./sounds/read.mp3"></audio>
+  <audio id="sound-player24" src="./sounds/bean.mp3"></audio>
+  <audio id="sound-player25" src="./sounds/sea.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  <br>
+  <br>
+  <center>
+    <h1 id="heading" style="padding-top: 5%; ;">Diphthongs “ee” and “ea”</h1> <br>
+  </center>
+  <div class="container-fluid text-center" style="font-size: 22px; padding:0 17%;">
+       <p class="text-start">
+        A diphthong is two vowel sounds that combine to make one vowel sound.
+<br><br>
+The "ee" and "ea" sounds are like magic pairs of letters that love to be together. When "ee" and "ea" come along, they make a long "eee" sound, just like the sound you hear when you say "tree" or "leaf." 
+<br><br>
+Remember, "ee" and "ea" are vowel buddies! They love to make words sound sweet and long, just like the words "see," "meet," "tea," and "beach."
+<br><br>
+Remember, when you see "ee" or "ea" in a word, they often make the same sound. 
+<br><br>
+But sometimes in the diphthong “ea”, words like "fear," “tear,” “clear” can be a little different.
+       </p>
+<div class="d-flex">
+  <div style="background-color: antiquewhite;">
+    <p class="text-start" style="padding-left: 6%">
+      "ee" Words:
+     </p>
+    <ul class="text-start">
+      <li><span class="clickable-11 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Bee</span> - The bee buzzes around the flowers.</li>
+      <li><span class="clickable-12 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Tree</span> - The tree is very tall.</li>
+      <li><span class="clickable-13 btn btn-primary" style="font-size: 20px; color:white ; margin-bottom: 3px;">Feet</span> - My feet are in the sand.</li>
+      <li><span class="clickable-14 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">See</span> - I can see the stars at night.</li>
+      <li><span class="clickable-15 btn btn-primary" style="font-size: 20px; color:white ; margin-bottom: 3px;">Sleep</span> - It’s time to go to sleep.</li>
+     </ul>
+  </div>
+  <div style="background-color: rgb(170, 225, 251); margin-left: 5%;">
+    <p class="text-start" style="padding-left: 6%">
+      "ea" Words:
+     </p>
+     <ul class="text-start">
+      <li><span class="clickable-21 btn btn-primary" style="font-size: 20px; color:white ; margin-bottom: 3px;">Leaf</span> - The leaf is green.</li>
+      <li><span class="clickable-22 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Tea</span> - My mom drinks tea in the morning.</li>
+      <li><span class="clickable-23 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Read</span> - I love to read books.</li>
+      <li><span class="clickable-24 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Bean</span> - The bean is small and round.</li>
+      <li><span class="clickable-25 btn btn-primary" style="font-size: 20px; color:white; margin-bottom: 3px;">Sea</span> - We went to the sea to swim.</li>
+     </ul>
+  </div>
+</div>
+       
+       
+     
+ 
+    <br>
+    <a href="fun_time.html" class="btn btn-primary mb-4 btn-lg- text-center"
+      style="height: 50px; width: 200px; font-size: 22px;">Word Meanings</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player12');
+      var clickableW = document.querySelector('.clickable-12');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player13');
+      var clickableW = document.querySelector('.clickable-13');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player11');
+      var clickableW = document.querySelector('.clickable-11');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player21');
+      var clickableW = document.querySelector('.clickable-21');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player22');
+      var clickableW = document.querySelector('.clickable-22');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player23');
+      var clickableW = document.querySelector('.clickable-23');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player24');
+      var clickableW = document.querySelector('.clickable-24');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player25');
+      var clickableW = document.querySelector('.clickable-25');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player14');
+      var clickableW = document.querySelector('.clickable-14');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player15');
+      var clickableW = document.querySelector('.clickable-15');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    
+  </script>
+</body>
+</html>
